@@ -1,0 +1,214 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --verde: #66CC00;
+    --gris: #333333;
+    --text: #999999;
+    --azul: #0066CC;
+    --grisc: #555555;
+    --magenta: #CC0066;
+    --verdem: #33CC33;
+    --compl: #FFFF33;
+}
+
+html {
+    font-size: 62.2%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    background-color: var(--oscuro);
+}
+
+body {
+    font: size 16px;
+    font-family: "Krub", sans-serif;
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--oscuro) 100%);
+}
+
+h1 {
+    font-size: 3.8rem;
+    color: var(--verde);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+@media (max-width: 768px) {
+    .navegacion-principal {
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+.navegacion-principal a {
+    color: var(--verde);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--azul);
+    color: var(--compl);
+}
+
+.nav-bg {
+    background-color: var(--gris);
+}
+
+
+
+body {
+    background: var(--oscuro);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--grisc);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.intro {
+    background-color: var(--gris);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 100%;
+    margin: 10px;
+}
+
+.contact-form {
+    background-color: var(--grisc);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+.contact-info {
+    background-color: var(--gris);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+.contact-form h2, .contact-info h2 {
+    color: var(--verde);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--verde);
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--verde);
+    transition: background-color 0.3s;
+}
+
+.social-icon svg {
+    fill: var(--blanco);
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon:hover {
+    background-color: var(--compl);
+}
+
+footer {
+    background-color: var(--gris);
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .contact-form, .contact-info {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .contact-form h2, .contact-info h2 {
+        font-size: 20px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

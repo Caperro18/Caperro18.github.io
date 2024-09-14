@@ -1,0 +1,116 @@
+body {
+    background-color: #212121;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    text-align: center;
+    color: #66FF66;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.circle-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+#circulo {
+    animation: reloj 10s linear 1;
+}
+
+#pulgar {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    animation: pulgar 10s linear 1;
+}
+
+#texto {
+    margin-top: 20px;
+}
+
+@keyframes reloj {
+    0% {
+        stroke-dasharray: 0;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dasharray: 628;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes pulgar {
+    0% {
+        opacity: 0;
+        stroke: #FFFFFF;
+        fill: #66FF66;
+    }
+
+    80% {
+        opacity: 1;
+        stroke: #FFFFFF;
+        fill: #66FF66;
+    }
+
+    100% {
+        opacity: 1;
+        stroke: #000000;
+        fill: #FFFFFF;
+    }
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 600px) {
+    .circle-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    #circulo {
+        width: 100%;
+        height: 100%;
+    }
+
+    #pulgar {
+        width: 130px;
+        height: 130px;
+    }
+
+    #texto {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .circle-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    #circulo {
+        width: 100%;
+        height: 100%;
+    }
+
+    #pulgar {
+        width: 80px;
+        height: 80px;
+    }
+
+    #texto {
+        font-size: 16px;
+    }
+}

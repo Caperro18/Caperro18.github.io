@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contacto Juan Lòpez <span>Freelancer</span></h1>
+    </header>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="Sobremi.html">Sobre Mi</a>
+            <a href="Clientes.html">Clientes</a>
+            <a href="Contacto.html">Contacto</a>
+        </nav>
+    </div>
+    <main class="container">
+        <section class="intro">
+            <h2>Bienvenido a nuestra página de contacto</h2>
+            <p>Estamos aquí para ayudarte. Si tienes alguna pregunta, no dudes en contactarnos.</p>
+        </section>
+        <section class="contact-form">
+            <h2>Envíanos un mensaje</h2>
+            <form class="formulario">
+
+                <legend>contactanos llenando todos los campos</legend>
+
+                <div class="contenedor-campos">
+
+                    <div class="campo">
+                        <label>Nombre:</label>
+                        <input class="imput-tex" type="text" placeholder="Tu nombre" name="nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label>Teléfono:</label>
+                        <input class="imput-tex" type="tel" placeholder="Tu telefono" name="telefono" pattern="[0-9]+"
+                            title="Por favor, ingresa solo números">
+                    </div>
+
+                    <div class="campo">
+                        <label>Correo:</label>
+                        <input class="imput-tex" type="email" placeholder="Tu correo" name="correo" required>
+                    </div>
+
+                    <div class="campo">
+                        <label>Mensaje:</label>
+                        <textarea class="imput-tex" name="mensaje" placeholder="Escribe tu mensaje aquí"
+                            required></textarea>
+                    </div>
+                    <div class="enviar alinear-derecha flex">
+                        <a class="w-sn-100" href="echo.html"><button class="boton">ENVIAR</button></a>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="contact-info">
+            <h2>Información de Contacto</h2>
+            <p><strong>Teléfono:</strong> +52 782 196 8020</p>
+            <p><strong>Email:</strong> caperro@6qy01j.onmicrosoft.com</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" class="social-icon facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M22.675 0h-21.35c-0.733 0-1.325 0.592-1.325 1.325v21.351c0 0.733 0.592 1.325 1.325 1.325h11.495v-9.294h-3.122v-3.622h3.122v-2.672c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463 0.099 2.794 0.143v3.239l-1.918 0.001c-1.504 0-1.794 0.715-1.794 1.763v2.314h3.588l-0.467 3.622h-3.121v9.293h6.116c0.733 0 1.325-0.592 1.325-1.325v-21.351c0-0.733-0.592-1.325-1.325-1.325z" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M22.225 0h-20.451c-0.978 0-1.774 0.796-1.774 1.774v20.451c0 0.978 0.796 1.774 1.774 1.774h20.451c0.978 0 1.774-0.796 1.774-1.774v-20.451c0-0.978-0.796-1.774-1.774-1.774zm-14.436 20.451h-3.127v-11.915h3.127v11.915zm-1.563-13.575c-0.99 0-1.796-0.806-1.796-1.796s0.806-1.796 1.796-1.796c0.99 0 1.796 0.806 1.796 1.796s-0.806 1.796-1.796 1.796zm14.436 13.575h-3.127v-6.088c0-1.453-0.026-3.324-2.026-3.324-2.028 0-2.337 1.582-2.337 3.219v6.193h-3.127v-11.915h3.004v1.624h0.042c0.418-0.79 1.438-1.624 2.963-1.624 3.165 0 3.748 2.084 3.748 4.796v7.119z" />
+                    </svg>
+                </a>
+                <a href="https://github.com" target="_blank" class="social-icon github">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M12 0.297c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385 0.599 0.111 0.82-0.26 0.82-0.577 0-0.285-0.011-1.041-0.017-2.042-3.338 0.726-4.042-1.61-4.042-1.61-0.546-1.387-1.333-1.757-1.333-1.757-1.089-0.745 0.083-0.729 0.083-0.729 1.205 0.085 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.494 0.998 0.108-0.775 0.419-1.305 0.762-1.605-2.665-0.304-5.466-1.332-5.466-5.931 0-1.31 0.469-2.381 1.235-3.221-0.124-0.303-0.535-1.527 0.117-3.176 0 0 1.007-0.322 3.3 1.23 0.957-0.266 1.983-0.399 3.003-0.404 1.02 0.005 2.047 0.138 3.006 0.404 2.29-1.552 3.296-1.23 3.296-1.23 0.654 1.649 0.243 2.873 0.119 3.176 0.769 0.84 1.234 1.911 1.234 3.221 0 4.609-2.807 5.624-5.479 5.921 0.431 0.371 0.816 1.102 0.816 2.221 0 1.606-0.015 2.901-0.015 3.293 0 0.32 0.218 0.694 0.825 0.577 4.767-1.585 8.204-6.083 8.204-11.385 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon youtube">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M19.615 3.184c-0.864-0.324-2.708-0.344-3.629-0.344h-7.973c-0.921 0-2.764 0.020-3.629 0.344-0.868 0.325-1.533 1.055-1.859 1.93-0.336 0.898-0.344 2.765-0.344 2.765s-0.008 1.863 0.344 2.765c0.325 0.875 0.991 1.605 1.859 1.93 0.865 0.324 2.708 0.344 3.629 0.344h7.973c0.921 0 2.764-0.020 3.629-0.344 0.868-0.325 1.533-1.055 1.859-1.93 0.336-0.898 0.344-2.765 0.344-2.765s0.008-1.863-0.344-2.765c-0.325-0.875-0.991-1.605-1.859-1.93zm-10.615 7.422v-5.578l4.79 2.789-4.79 2.789z" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Juan Lòpez Freelancer Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
