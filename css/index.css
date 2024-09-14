@@ -195,7 +195,7 @@ h3 {
 .servicios p{
     line-height:2;
     text-align: center;
-    color: var(--secundario);
+  color: var(--blanco);
 }
 
 .iconos{
@@ -283,7 +283,7 @@ h3 {
 .servicios p{
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(--verdem);
+    color: var(--blanco);
 
 }
 
