@@ -195,7 +195,11 @@ h3 {
 .servicios p{
     line-height:2;
     text-align: center;
+<<<<<<< HEAD
   color: var(--blanco);
+=======
+    color: var(--secundario);
+>>>>>>> 23276eb4245874ad9a454174ff9a4759425e280c
 }
 
 .iconos{
