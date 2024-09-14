@@ -94,4 +94,5 @@ navegacion-principal {
 
 .nav-bg {
     background-color: var(--gris);
+    text-decoration: none;
 }
